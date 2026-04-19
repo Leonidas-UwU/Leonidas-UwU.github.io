@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cobbleverse · Index oficial | Pokémon × Minecraft</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', 'Poppins', system-ui, sans-serif;
+            background: radial-gradient(circle at 10% 30%, #0f121f, #03050a);
+            color: #f0f3fa;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        .noise {
+            position: fixed;
+            top:0; left:0; width:100%; height:100%;
+            background: repeating-linear-gradient(45deg, rgba(255,100,50,0.02) 0px, rgba(255,100,50,0.02) 2px, transparent 2px, transparent 8px);
+            pointer-events: none;
+            z-index: 0;
+        }
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            z-index: 2;
+            position: relative;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        h1 {
+            font-size: 4rem;
+            background: linear-gradient(135deg, #FFB347, #FF6B4A, #A855F7);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: -1px;
+        }
+        .tagline {
+            font-size: 1.2rem;
+            color: #b9c3db;
+            margin-top: 0.5rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .card {
+            background: rgba(20, 25, 40, 0.65);
+            backdrop-filter: blur(8px);
+            border-radius: 32px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.2s, border-color 0.2s;
+            border: 1px solid rgba(255, 180, 71, 0.2);
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #FFB347;
+            background: rgba(30, 35, 55, 0.8);
+        }
+        .card i {
+            font-size: 3rem;
+            color: #FFB347;
+            margin-bottom: 1rem;
+        }
+        .card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+        .card p {
+            color: #cbd5e6;
+        }
+        .external {
+            border-color: rgba(168, 85, 247, 0.3);
+        }
+        .external i {
+            color: #A855F7;
+        }
+        .buttons-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        .btn {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 0.8rem 1.8rem;
+            border-radius: 60px;
+            font-weight: 600;
+            text-decoration: none;
+            color: #f0f3fa;
+            border: 1px solid rgba(255, 180, 71, 0.4);
+            transition: 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+        .btn-primary {
+            background: linear-gradient(95deg, #FFB347, #FF6B4A);
+            color: #0b0e17;
+            border: none;
+        }
+        .btn-primary:hover {
+            transform: scale(1.02);
+            box-shadow: 0 5px 15px rgba(255,107,74,0.3);
+        }
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            font-size: 0.8rem;
+            color: #6b7280;
+        }
+        @media (max-width: 700px) {
+            h1 { font-size: 2.5rem; }
+            body { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="noise"></div>
+<div class="container">
+    <header>
+        <h1>COBBLEVERSE</h1>
+        <div class="tagline"><i class="fas fa-dragon"></i> El modpack definitivo de Pokémon en Minecraft · Índice oficial</div>
+    </header>
+
+    <div class="grid">
+        <!-- Enlace a la página principal completa (el sitio detallado) -->
+        <a href="cobbleverse.html" class="card">
+            <i class="fas fa-globe"></i>
+            <h2>Sitio completo</h2>
+            <p>Explora la página principal con todas las características, imágenes, combates, comidas y más. Sumérgete en la experiencia completa.</p>
+            <span style="margin-top: 1rem; display: inline-block; color:#FFB347;">Acceder →</span>
+        </a>
+
+        <a href="https://www.cobbleverse.wiki" target="_blank" class="card external">
+            <i class="fas fa-book-open"></i>
+            <h2>Wiki oficial</h2>
+            <p>Guías detalladas, spawns de Pokémon, objetos, gimnasios y secretos del modpack.</p>
+            <span style="margin-top: 1rem; display: inline-block; color:#A855F7;">cobbleverse.wiki →</span>
+        </a>
+
+        <a href="https://cobblemon.tools/pokedex/" target="_blank" class="card external">
+            <i class="fas fa-search"></i>
+            <h2>Pokédex avanzada</h2>
+            <p>Consulta movimientos, evoluciones, tipos y habilidades de más de 1000 Pokémon.</p>
+            <span style="margin-top: 1rem; display: inline-block; color:#A855F7;">cobblemon.tools →</span>
+        </a>
+    </div>
+
+    <div class="buttons-row">
+        <a href="https://modrinth.com/modpack/cobbleverse" target="_blank" class="btn"><i class="fab fa-modrinth"></i> Modrinth</a>
+        <a href="https://www.curseforge.com/minecraft/modpacks/cobbleverse-cobblemon" target="_blank" class="btn"><i class="fab fa-curseforge"></i> CurseForge</a>
+        <a href="cobbleverse.html" class="btn btn-primary"><i class="fas fa-arrow-right"></i> Ver página principal del modpack</a>
+    </div>
+
+    <footer>
+        <p><i class="fas fa-heart" style="color:#FFB347;"></i> Cobbleverse no está afiliado a Nintendo o Mojang. Creado por fans para la comunidad.</p>
+        <p style="margin-top: 0.5rem;">📁 index de navegación · Guarda este archivo como index.html y el sitio detallado como cobbleverse.html</p>
+    </footer>
+</div>
+</body>
+</html>
